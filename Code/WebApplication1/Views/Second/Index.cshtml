@@ -3,6 +3,35 @@
     ViewBag.Title = "Index";
 }
 
+<style type="text/css">
+    .container1 {
+        width: 100%;
+        height: 42px;
+        margin-top: 10px;
+    }
+
+    .myItem1 {
+        width: 100px;
+        height: 42px;
+        float: left;
+    }
+
+    .txtCode {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+    }
+
+    .imgCode {
+        width: 120px;
+        height: 40px;
+        border: 1px solid rgb(118, 118, 118);
+    }
+</style>
+
 <h2>Index</h2>
 
 <div style="padding: 10px; font-size: 18px; padding-left: 0px;">
@@ -10,3 +39,30 @@
     @Html.Label("第二种验证码")&nbsp; &nbsp;
     @Html.ActionLink("第三种验证码", "", "Third")
 </div>
+
+<div class="container1">
+    <div class="myItem1">
+        <input type="text" id="txtCode" name="txtCode" class="txtCode" maxlength="5" />
+    </div>
+    <div class="myItem1" style="width: 150px; padding-left: 10px;">
+        <img id="imgCode" class="imgCode" name="imgCode" title="点击刷新验证码" alt="点击刷新验证码" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#imgCode").click(onImgCodeClick);
+        refreshCode();
+    });
+
+    function onImgCodeClick() {
+        refreshCode();
+    }
+
+    function refreshCode() {
+        var url = "/Second/Code";
+        url += "?ran=" + Math.random().toString();
+
+        $("#imgCode").attr("src", url);
+    }
+</script>

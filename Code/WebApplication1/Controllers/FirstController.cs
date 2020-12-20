@@ -23,12 +23,14 @@ namespace WebApplication1.Controllers
             code.FontMinSize = 26;
             code.FontMaxSize = 30;
 
-            MemoryStream ms = new MemoryStream();
-            code.CreateImage(ms);
-            Session["code"] = code.ValidationCode;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                code.CreateImage(ms);
+                Session["code"] = code.ValidationCode;
 
-            Response.ContentType = "image/gif";
-            Response.BinaryWrite(ms.GetBuffer());
+                Response.ContentType = "image/gif";
+                Response.BinaryWrite(ms.GetBuffer());
+            }
 
             return new EmptyResult();
         }

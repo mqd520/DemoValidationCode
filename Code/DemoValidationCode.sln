@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationCodeHelper", "Val
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{00873A43-D81F-4AF3-ABA6-377A07BF6157}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationCode1", "ValidationCode1\ValidationCode1.csproj", "{95057C7C-EC3C-433E-96B6-EA903C2B9726}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{00873A43-D81F-4AF3-ABA6-377A07BF6157}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00873A43-D81F-4AF3-ABA6-377A07BF6157}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00873A43-D81F-4AF3-ABA6-377A07BF6157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95057C7C-EC3C-433E-96B6-EA903C2B9726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95057C7C-EC3C-433E-96B6-EA903C2B9726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95057C7C-EC3C-433E-96B6-EA903C2B9726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95057C7C-EC3C-433E-96B6-EA903C2B9726}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 		{21AEECDB-3F06-4E66-9322-AC796148A0D2} = {350A7CCF-2FBE-4E26-8EE0-0FF9B2BC540E}
 		{1FB6D1A1-30E8-409C-8405-8B9270CA2D84} = {350A7CCF-2FBE-4E26-8EE0-0FF9B2BC540E}
 		{00873A43-D81F-4AF3-ABA6-377A07BF6157} = {AEADA32B-DD6C-41F8-9292-BC11DF2D1297}
+		{95057C7C-EC3C-433E-96B6-EA903C2B9726} = {350A7CCF-2FBE-4E26-8EE0-0FF9B2BC540E}
 	EndGlobalSection
 EndGlobal
